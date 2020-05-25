@@ -2,6 +2,10 @@ const inquirer = require('inquirer');
 const fs = require('fs')
 const generatePage = require('./src/template')
 let newArray = []
+const Employee = require('../Team-Builder-Plus/lib/Employee')
+const Engineer = require('../Team-Builder-Plus/lib/Engineer')
+const Intern = require('../Team-Builder-Plus/lib/Intern')
+const Manager = require('../Team-Builder-Plus/lib/Manager')
 
 const promptProject = portfolioData => {
    
