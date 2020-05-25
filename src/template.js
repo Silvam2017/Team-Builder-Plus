@@ -1,6 +1,10 @@
 //Module 9 Template-Page
 module.exports = templateData => {
     const { projects, about, ...header } = templateData;
+    managerObj = templateData[0];
+    engineerObj = templateData[1];
+    engineer2Obj = templateData[2];
+    internObj = templateData[3];
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -32,11 +36,10 @@ module.exports = templateData => {
             <div class="col-3">
             <div class="card" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Card Title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <h5 class="card-title">${managerObj.name}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">ID: ${managerObj.id}</h6>
+              <p class="card-text">Phone number: ${managerObj.officeNumber}</p>
+              <a href="mailto:${managerObj.email}" class="card-link">Email</a>
             </div>
             </div>
             </div>
@@ -44,11 +47,10 @@ module.exports = templateData => {
             <div class="col-3">
             <div class="card" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <h5 class="card-title">${engineerObj.name}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">ID: ${engineerObj.id}</h6>
+              <p class="card-text">${engineerObj.github}</p>
+              <a href="mailto:${engineerObj.email}" class="card-link">Email</a>
             </div>
             </div>
             </div>
@@ -56,11 +58,10 @@ module.exports = templateData => {
             <div class="col-3">
             <div class="card" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <h5 class="card-title">${internObj.name}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">ID: ${internObj.id}</h6>
+              <p class="card-text">${internObj.university}</p>
+              <a href="mailto:${internObj.email}" class="card-link">Email</a>
             </div>
             </div>
             </div>
@@ -68,11 +69,10 @@ module.exports = templateData => {
             <div class="col-3">
             <div class="card" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <h5 class="card-title">${engineer2Obj.name}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">ID: ${engineer2Obj.id}</h6>
+              <p class="card-text">${engineer2Obj.github}</p>
+              <a href="mailto:${engineer2Obj.email}" class="card-link">Email</a>
             </div>
             </div>
             </div>
