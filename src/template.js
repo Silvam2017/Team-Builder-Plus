@@ -47,17 +47,6 @@ module.exports = templateData => {
             <div class="col-3">
             <div class="card" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">${engineerObj.name}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">ID: ${engineerObj.id}</h6>
-              <p class="card-text">${engineerObj.github}</p>
-              <a href="mailto:${engineerObj.email}" class="card-link">Email</a>
-            </div>
-            </div>
-            </div>
-
-            <div class="col-3">
-            <div class="card" style="width: 18rem;">
-            <div class="card-body">
               <h5 class="card-title">${internObj.name}</h5>
               <h6 class="card-subtitle mb-2 text-muted">ID: ${internObj.id}</h6>
               <p class="card-text">${internObj.university}</p>
@@ -69,9 +58,20 @@ module.exports = templateData => {
             <div class="col-3">
             <div class="card" style="width: 18rem;">
             <div class="card-body">
+              <h5 class="card-title">${engineerObj.name}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">ID: ${engineerObj.id}</h6>
+              <p class="card-text">https://www.github.com/${engineerObj.github}</p>
+              <a href="mailto:${engineerObj.email}" class="card-link">Email</a>
+            </div>
+            </div>
+            </div>
+
+            <div class="col-3">
+            <div class="card" style="width: 18rem;">
+            <div class="card-body">
               <h5 class="card-title">${engineer2Obj.name}</h5>
               <h6 class="card-subtitle mb-2 text-muted">ID: ${engineer2Obj.id}</h6>
-              <p class="card-text">${engineer2Obj.github}</p>
+              <p class="card-text">https://www.github.com/${engineer2Obj.github}</p>
               <a href="mailto:${engineer2Obj.email}" class="card-link">Email</a>
             </div>
             </div>

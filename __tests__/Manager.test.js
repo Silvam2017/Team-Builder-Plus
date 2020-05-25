@@ -6,4 +6,5 @@ test('check if name is string, ID is a number and email contains a "@",', () => 
     expect(newHire.name).toEqual(expect.anything());
     expect(newHire.id).toEqual(expect.anything());
     expect(newHire.email).toContain("@");
+    expect(newHire.officeNumber).toEqual(expect.anything());
 });

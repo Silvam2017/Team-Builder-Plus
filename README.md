@@ -19,7 +19,7 @@
 * This project dynamically generates index.html files for users to incorporate in their company pages. You may include a manager (the user), two engineers, and an intern.
 
 ## Installation 
-* To install, download or clone the files onto your computer from the GitHub repository. Make sure all of the files are in a folder. Next, you will navigate to the folder you have all of the files downloaded to within a terminal. It is highly encouraged you use command prompt if you are on Windows, as this comes standard with every copy of Windows. From there, you can execute the program by typing in the command "node index.js". Follow the prompts within the terminal and your new page will be created in the "dist" folder.
+* To install, download or clone the files onto your computer from the GitHub repository. Make sure all of the files are in a folder. Next, you will navigate to the folder you have all of the files downloaded to within a terminal. It is highly encouraged you use command prompt if you are on Windows, as this comes standard with every copy of Windows. You will then need to install "Node Package Manager" by running and completing the command of: "npm init". Additionally, you will need "Node" and "Jest" which can also be installed in the terminal with the commands "npm install node" and "npm install --save-dev jest" respectively.  From there, you can execute the program by typing in the command "node index.js". Follow the prompts within the terminal and your new page will be created in the "dist" folder.
 
 ## Usage Instructions 
 * This program may be used freely and openly by all.
@@ -40,6 +40,7 @@
     
 
 ## Questions?
+* [To see the program in use watch this video](https://youtu.be/iToAuaZCq2Y)
 ### Direct them to (github.com/silvam2017)
 
 
